@@ -1,0 +1,46 @@
+<!-- Cấu trúc thẻ (tag) Mỗi thẻ thường có 3 phần: phần mở, thân và phần đóng. Xét ví dụ:
+<h1>Hello world</h1>
+
+<h1> là phần mở của thẻ
+
+</h1> là phần đóng, khác phần mở một chút khi có thêm dấu / và ghép thành cặp tương ứng với phần mở. Hello world là phần thân của thẻ. Đây sẽ là nội dung hiển thị trên trang web mà người dùng có thể thấy được trong khi phần
+<h1> và </h1> thì người dùng không thể nhìn thấy bởi vì nó được dùng để đánh dấu. Một dạng khác của thẻ là thẻ tự đóng (self-closing tag). Ví dụ như thẻ img: <img src="x.gif" />, nó chỉ có 1 tag, và chứa cả phần mở và phần đóng. Trường hợp này, nội dung hiển
+thị là ảnh và nó được cung cấp từ nguồn x.gif. Nó không có văn bản để hiển thị nên sẽ tự đóng lại. Thuộc tính của thẻ Các thẻ được bổ sung thêm thuộc tính (attribute). Thuộc tính được viết theo từng cặp có dạng name = “value”. Ví dụ như class=”subject”.
+Chú ý rằng, thuộc tính luôn được viết ở phần mở. Một thẻ có thể có nhiều thuộc tính giống nhau nhưng các thuộc tính không được phép trùng tên. Block và Inline Có 2 loại hiển thị phổ biến nhất là block (khối) và inline (nội tuyến). Các block tag là những
+tag chiếm một chiều rộng và chiều cao nhất định. Nó sẽ luôn bắt đầu dòng mới và phía sau nó cũng luôn là dòng mới. Các inline tag là những tag chỉ chiếm đủ không gian cần thiết. Nếu hai hay nhiều thẻ inline gần nhau, chúng có thể nằm trên cùng 1 dòng,
+cho đến khi dòng đó hết chỗ, nó sẽ thực hiện xuống dòng. Một số thẻ phổ biến Nhóm thẻ heading gồm 6 thẻ từ
+<h1> đến
+    <h6>. Kích thước thẻ giảm dần từ
+        <h1> đến
+            <h6>. Thẻ
+                <p> được sử dụng để đánh dấu một đoạn văn. Đây là thẻ block nên chúng ta không nên dùng thẻ
+                    <p> bên trong các thẻ inline khác. Chúng ta cũng không nên lồng thẻ
+                        <p> bên trong một thẻ
+                            <p> khác, không đặt heading bên trong một thẻ
+                                <p>. Thẻ
+                                    <div> là một phần thường lớn hơn một paragraph và là nội dung liên quan mà các bạn muốn nhóm lại với nhau. Thẻ
+                                        <ul> tạo ra một danh sách không sắp xếp. Nó được dùng kết hợp với các thẻ
+                                            <li>. Ví dụ:
+                                                <ul>
+
+                                                    <li>Item One</li>
+
+                                                    <li>Item Two</li>
+
+                                                </ul>
+
+                                                Tương tự, thẻ
+                                                <ol> tạo ra danh sách được sắp xếp và nó sẽ hiển thị số thứ tự.
+                                                    <ol>
+
+                                                        <li>Item One</li>
+
+                                                        <li>Item Two</li>
+
+                                                    </ol>
+
+                                                    Thẻ <br/> dùng để ngắt dòng (line break) và là thẻ tự đóng. Nó được dùng để thay thế cho các mã xuống dòng (khi ấn phím Enter). Thẻ <img> có 2 thuộc tính quan trọng là src và alt. Thuộc tính src dùng
+                                                    để chỉ định đường dẫn của ảnh sẽ hiển thị lên trong khi thẻ alt (viết tắt của alternative text) chứa văn bản thay thế. Văn bản này sẽ hiển thị thay cho ảnh khi người dùng sử dụng screen reader hoặc thậm
+                                                    chí nếu ảnh bị mất vì một lý do nào đó, có thể các bạn đã đặt tên sai file chẳng hạn. Kí hiệu đặc biệt Các kí tự như dấu bé hơn (
+                                                    <), dấu lớn hơn (>)… là các kí tự đặc biệt trong HTML. Nó được gọi là những thực thể đặc biệt (special entity) bởi nó được dùng để tạo ra các thẻ. Vậy nên, nếu bạn muốn những kí tự này, bạn cần phải viết nó ở dạng mã
+                                                        hóa (encode). Để xem danh sách các kí hiệu đặc biệt và ý nghĩa của nó, bạn có thể tham khảo tại: HTML Entities -->
