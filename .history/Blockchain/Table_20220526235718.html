@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bảng Bảng giúp sắp xếp mọi thứ theo hàng (row) hoặc cột (column) khác nhau. Nó hiển thị dữ liệu dưới dạng bảng gồm các hàng đan với các cột. Nó tạo thành các ô (cell). Nếu bảng có m hàng và n cột, nó sẽ có m*n ô. Tuy nhiên, việc dùng bảng cần phải có
+    kế hoạch cụ thể. Trước tiên, bạn cần phải xác định nội dung chính xác. Nếu đó thực sự là nội dung nên hiển thị ở chế độ hàng và cột thì bạn nên dùng bảng. Bước tiếp theo, hãy xác định số cột và số hàng bạn sẽ dùng. Bạn cần xác định rõ ràng để tránh
+    việc phải sửa bảng về sau bởi vì việc thêm hay bớt một cột vào bảng mất rất nhiều thời gian. Tạo bảng Để tạo bảng, chúng ta dùng bộ thẻ
+    <table>
+        <tr> và
+            <td>. Đây là một ví dụ về bảng:
+
+                <table>
+
+                    <tr>
+
+                        <td>One</td>
+
+                        <td>Two</td>
+
+                        <td>Three</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Four</td>
+
+                        <td>Five</td>
+
+                        <td>Six</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Seven</td>
+
+                        <td>Eight</td>
+
+                        <td>Nine </td>
+
+                    </tr>
+
+                </table>
+
+                Bạn bắt đầu với tag
+                <table> (bảng). Về cơ bản, nó chỉ là một phần tử container (vùng chứa) mà sẽ lưu tất cả các thuộc tính khác và tất cả các tag khác bên trong nó. Bên trong
+                    <table>, chúng ta dùng thẻ
+                        <tr> để tạo ra các hàng (row) và bên trong mỗi
+                            <tr> chúng ta dùng các thẻ
+                                <td> cho từng ô. Mỗi hàng đều có số cột giống nhau. Trừ trường hợp các bạn muốn gộp một vài ô với nhau, chúng ta cần chú ý để số thẻ
+                                    <td> trong từng
+                                        <tr> là giống nhau. Nó sẽ hiển thị lên như sau: Bạn có thể thấy, nó có 3 dòng và 3 cột. Nó tạo thành 9 ô cho 9 giá trị. Tiêu đề bảng (table heading) Tiêu đề bảng (table heading) vào code của bạn. Tiêu đề bảng tức là
+                                            ở đầu mỗi cột hoặc thậm chí ở đầu; hoặc đầu mỗi hàng, bạn có văn bản được in đậm cho biết đây không phải là dữ liệu, đây là tên của dữ liệu mà chúng ta đang xem xét. Chúng ta dùng thẻ
+                                            <th> thay cho thẻ
+                                                <td> tiêu đề bảng. Bạn thường đặt tiêu đề là dòng đầu tiên hoặc cột đầu tiên trong bảng.
+
+                                                    <tr>
+
+                                                        <th>Column One</th>
+
+                                                        <th>Column Two</th>
+
+                                                        <th>Column Three</th>
+
+                                                    </tr>
+
+                                                    Gộp các ô Bạn có thể kết hợp nhiều hàng và/hoặc nhiều cột bằng cách sử dụng các thuộc tính rowspan và colspan. Colspan sẽ thực hiện gộp các ô theo hàng. Ví dụ, colspan = 5 nếu bạn muốn hợp nhất 5 ô trên cùng 1 hàng (gộp 5 cột). Rowspan sẽ thực hiện gộp
+                                                    các ô theo cột. Ví dụ: rowspan = 2 nếu bạn muốn hợp nhất 2 ô trên cùng 1 cột (gộp 2 hàng). Ví dụ:
+
+                                                    <table border="1">
+
+                                                        <tr>
+
+                                                            <th>Child's Name: </th>
+
+                                                            <th>Parent's Name: </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td rowspan="2">Catherine</td>
+
+                                                            <td>Michael McCarthy</td>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td>Colleen McCarthy</td>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td>Maggie</td>
+
+                                                            <td>Sheila McGee</td>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                    Sẽ hiển thị như sau: Table caption (chú thích) Chúng ta có thể dùng thẻ
+                                                    <caption> để tạo chú thích cho dữ liệu trong bảng.
+
+                                                        <caption>Monthly savings</caption>
+
+                                                        Hãy xem toàn bộ video bài giảng sau đây để hiểu rõ hơn bài giảng. (Keywords: Table, table row, table cell, colspan, rowspan) Tables Video từ nguồn học liệu gốc Credit: Coursera Lưu ý: Để xem được bản dịch Tiếng Việt sát nghĩa hơn của các video bài học,
+                                                        học viên hãy sử dụng công cụ FUNiX Passport. Xem hướng dẫn cài đặt và sử dụng tại đây. Để xem được video bài học do Coursera cung cấp, bạn hãy click vào nút Enroll the course và chọn chế độ Audit
+                                                        the course. Xem hướng dẫn cụ thể tại đây.
+</body>
+
+</html>
