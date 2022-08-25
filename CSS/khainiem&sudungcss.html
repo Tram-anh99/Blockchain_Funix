@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      Khái niệm và sử dụng CSS
+ Bookmark this page
+Giới thiệu CSS
+
+HTML được sử dụng để tạo cấu trúc của trang. Cùng một file HTML nhưng có thể hiển thị khác nhau khi xem trên các trình duyệt khác nhau. Mỗi trình duyệt đều có style mặc định khác nhau của riêng mình. Có một số khác biệt nhỏ khi hiển thị trang HTML lên các trình duyệt khác nhau. Nhưng nói chung, giao diện của trang HTML thực sự đơn giản.
+
+Để làm cho các trang web đẹp, sinh động và tạo phong cách, chúng ta dùng CSS.
+
+Ví dụ: <h1 style="color: blue;">Styled Heading</h1>
+
+CSS là viết tắt của Cascading style sheets.
+
+Cú pháp CSS
+
+Cú pháp CSS như sau:
+
+selector {
+
+     property: value;
+
+}
+
+Trong đó:
+
+Selector là bộ chọn, nó giúp chọn ra các thẻ sẽ được áp dụng
+Property là tên thuộc tính CSS. Có rất nhiều thuộc tính trong CSS mà bạn sẽ lần lượt tìm hiểu
+Value là giá trị của thuộc tính, ảnh hưởng trực tiếp đến hiển thị trên trang web
+Các trình soạn thảo sẽ hỗ trợ hiển thị màu sắc khác nhau giữa selector, property và value như bên dưới.
+
+h1{
+
+    color: blue;
+
+}
+
+Ví dụ trên chỉ ra rằng tất cả các thẻ h1 sẽ có màu blue (màu xanh). 
+
+Comment (chú thích) trong CSS
+
+Muốn tạo chú thích trong CSS chúng ta dùng cặp /* và */
+
+Ví dụ:
+
+h1{
+
+    /* Chuyển màu của thẻ h1 thành màu xanh */
+
+    color: blue;
+
+}
+
+Bạn có thể viết bất kì thứ gì vào phần comment mà không hề ảnh hưởng đến code CSS.
+
+Nhiều thuộc tính CSS
+
+Bạn có thể thêm nhiều thuộc tính và giá trị khác. Mỗi câu lệnh kết thúc bằng dấu chấm phẩy (;) và thường được viết xuống dòng.
+
+Ví dụ:
+
+h1{
+
+    /* Chuyển màu của thẻ h1 thành màu xanh */
+
+    color: blue;
+
+    /* Chuyển màu nền thành màu vàng */
+
+    background-color: yellow;
+
+}
+
+Internal Style Sheet (style sheet bên trong trang)
+
+Khi chúng ta sử dụng Internal Style Sheet, chúng ta cần thực hiện như sau:
+
+style được đặt trong thẻ <head>
+Chúng ta dùng thẻ <style>
+Style sẽ được áp dụng cho toàn trang
+Ví dụ:
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Title here</title>
+
+    <style>
+
+        h1 {
+
+            color: blue;
+
+        }
+
+    </style>
+
+</head>
+
+Khi trình duyệt mở trang, nó sẽ thực hiện phần <head> và tìm thấy style để áp dụng cho trang. Nó sẽ biết để đi qua trang của các bạn và áp dụng quy tắc này cho tất cả các thẻ <h1>.
+
+Tương tự, nếu các bạn có nhiều quy tắc bao gồm văn bản, hình ảnh, những thứ như thế, nó sẽ biết phải áp dụng điều này cho tất cả các trường hợp trong toàn bộ file.
+
+Bạn nên dùng Internal Style Sheet khi các bạn chỉ cố tạo style cho một trang. Nó có thể giữ tất cả code HTML và CSS trong một file chứ không phải tìm ở các file khác nhau.
+
+Tuy nhiên, trường hợp bạn có nhiều trang cùng sử dụng chung CSS, bạn cần đưa CSS ra một file riêng, và nhúng file đó vào trong các trang HTML. Đó là cách sử dụng External Style Sheet (style sheet bên ngoài).
+
+External Style Sheet (style sheet bên ngoài)
+
+Cách hoạt động của một External Style Sheet là các bạn đặt CSS của các bạn trong một file khác. File này sẽ có phần đuôi mở rộng là *.css.
+
+Bạn có thể viết toàn bộ mã CSS giống như đã viết trong lúc dùng Internal Style Sheet. Tuy nhiên, bạn không cần đặt tất cả trong thẻ style, mà chỉ đơn giản là viết mã CSS.
+
+    <style>
+
+        h1 {
+
+            color: blue;
+
+            background-color: yellow;
+
+        }
+
+    </style>
+
+Tiếp theo, bạn cần load (tải) file css này vào trong file html. Bạn sẽ sử dụng thẻ <link> đặt trong thẻ <head> để làm việc này.
+
+Ví dụ:
+
+<head>
+     <link rel="stylesheet" href="mystyle.css">
+</head>
+
+Trong đó, mystyle.css là tên file CSS của bạn. Nếu bạn đặt file CSS ở folder khác, bạn sẽ cần chỉ ra đường dẫn tương đối từ file HTML đến file CSS.
+
+Hãy xem lại nội dung về đường dẫn đã học ở bài 3, mục Hyperlink.
+
+Cascading (xếp tầng)
+
+CSS hoạt động theo nguyên tắc xếp tầng. Các tầng style được đặt lên nhau theo nguyên tắc có thứ tự ưu tiên sau:
+
+CSS mặc định của trình duyệt – Mức độ ưu tiên thấp nhất
+External Style Sheet – CSS trong file external .css
+Internal Style Sheet – CSS viết trong thẻ head
+Inline Style  - CSS viết trong thuộc tính style của thẻ html, mức độ ưu tiên cao nhất. Điều này có nghĩa là: inline style vô hiệu hóa tất cả các quy tắc style khác của các bạn.
+Muốn thay đổi thứ tự ưu tiên trên, chúng ta có thể dùng !important. Nó được sử dụng để đánh dấu một quy tắc CSS nào đó là quan trọng. Nó sẽ không bị ghi đè bởi những tầng khác.
+
+Hãy xem toàn bộ video bài giảng sau đây để hiểu rõ hơn bài giảng.
+
+(Keywords: CSS, Cascading Style Sheets, css syntax, css property, inline, internal, external, !important)
+
+
+CSS
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+Lưu ý:
+
+Để xem được bản dịch Tiếng Việt sát nghĩa hơn của các video bài học, học viên hãy sử dụng công cụ FUNiX Passport. Xem hướng dẫn cài đặt và sử dụng tại đây.
+Để xem được video bài học do Coursera cung cấp, bạn hãy click vào nút Enroll the course và chọn chế độ Audit the course. Xem hướng dẫn cụ thể tại đây.
+</body>
+</html>
