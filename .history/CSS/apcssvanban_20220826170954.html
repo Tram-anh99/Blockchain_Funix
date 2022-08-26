@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      Áp dụng CSS cho văn bản
+ Bookmark this page
+Muốn áp dụng CSS cho văn bản, lập trình viên sẽ sử dụng các thuộc tính như font-family, font-size. Ngoài ra, CSS còn cung cấp thêm các thuộc tính để giúp thực hiện giãn cách giữa các chữ hay các dòng, thực hiện áp dụng hiệu ứng trên văn bản.
+
+Sử dụng font chữ
+
+Bạn có thể dùng CSS để tạo style cho font family, font-style (kiểu font), font-variant (biến thể font) và kích cỡ font. Nó còn có color (màu sắc) và background (nền) của font chữ. Chúng ta cũng có thể xem xét căn chỉnh (alignment) giống như bạn canh lề trong word hay quy định line-height (chiều cao dòng).
+
+Font family
+
+Font family chỉ là các loại văn bản khác nhau.
+
+Nếu bạn đã sử dụng Word, bạn đã đi đến font family và bạn có thể chọn Arial hoặc Wingdings hoặc nhiều loại font chữ khác nhau. Bạn có thể làm những việc tương tự trên trang web của mình.
+
+Một số font phổ biến là: Helvetica, Courier, Courier New, Comic Sans, cursive hoặc Verdana.
+
+Ví dụ code:
+
+    <style>
+
+        h1{
+
+            font-family: Helvetica;
+
+        }
+
+    </style>
+
+Trường hợp tên font của bạn có nhiều hơn 1 từ (có dấu cách ở giữa), bạn cần dùng dấu nháy để đánh dấu nó. Ví dụ bên dưới, bạn sẽ cần đặt cụm ‘Times New Roman’ bên trong cặp nháy đơn.
+
+    <style>
+
+        h1{
+
+            font-family: 'Times New Roman';
+
+        }
+
+    </style>
+
+Cách thức hoạt động của nó là bạn sử dụng quy tắc cú pháp của bạn. Bạn có selector (bộ chọn), property (thuộc tính) và sau đó là giá trị.
+
+Các trình duyệt không hỗ trợ mọi thứ. Chúng ta đã nhìn thấy điều này ngay cả với HTML5.
+
+Một số trình duyệt hỗ trợ một số văn bản, một số thì không. Tương tự như vậy, một số trình duyệt hỗ trợ một số font chữ và những trình duyệt khác thì không. Do đó, bạn có thể cung cấp các lựa chọn thay thế. Trong ví dụ này, tôi đã cung cấp cho trình duyệt 3 lựa chọn thay thế khác nhau để sử dụng.
+
+        h1{
+
+            font-family: Courier, Impact, Arial;
+
+        }
+
+CSS có nghĩa là bất cứ khi nào bạn tới một tag <h1>, tôi muốn bạn sử dụng font chữ Courier. Nhưng nếu không có font chữ Courier, hãy sử dụng font chữ Impact. Nếu không có font đó, hãy sử dụng Arial.
+
+Nếu không có cả font chữ trên thì sao? Nếu không có Courier, Impact và cả Arial, nó sẽ luôn luôn quay trở lại mặc định của trình duyệt. Chữ của bạn sẽ không biến mất, nó sẽ chỉ hiển thị theo mặc định của trình duyêt. Tuy nhiên, như vậy có nghĩa là bạn đang có một font family không tốt.
+
+Hai loại font
+
+Về cơ bản có 2 loại: font chữ serif và font chữ sans-serif.
+
+Các font chữ serif là những font chữ có các cạnh lạ mắt dọc theo bên mà bạn sử dụng như khi học thư pháp hoặc những thứ tương tự như thế. Font chữ Serif có thể khiến nó rất rối, vậy nên hãy tránh sử dụng chúng nếu có thể.
+
+Các font chữ sans-serif rất gọn gàng, không có phần thả xuống hoặc tương tự như thế.
+
+Sử dụng font tùy chỉnh
+
+Nếu bạn muốn có font chữ của riêng bạn hoặc một số loại font chữ tùy chỉnh đặc biệt, an toàn cho trang web, bạn cần phải sử dụng quy tắc font chữ.
+
+Bạn cần định nghĩa font-face của riêng mình. Ví dụ: MySpecialFont
+
+    <style>
+
+        @font-face{
+
+            font-family: mySpecialFont;
+
+            src: url('Colleen.ttf');
+
+        }
+
+        h1{
+
+            font-family:mySpecialFont;
+
+        }
+
+    </style>
+
+Font-style
+
+Bạn có thể đặt font chữ ở trạng thái bình thường tức là mặc định hoặc ở dạng italic (in nghiêng).
+
+        h1{
+
+            font-family:mySpecialFont;
+
+            font-style: italic;
+
+        }
+
+Thuộc tính font-style có các giá trị:
+
+Normal: style mặc định
+Italic: kiểu in nghiêng
+Oblique: kiểu xiên, về cơ bản oblique chỉ là một kiểu nghiêng đặc biệt.
+Font-variant
+
+font-variant có 2 giá trị:
+
+normal: cỡ bình thường
+small-caps: font chữ in hoa nhỏ. Mọi người thường sử dụng nó khi cố tạo giao diện phù hợp nhưng hơi lạ mắt
+Kích thước font chữ
+
+Bạn có thể sử dụng font size để đặt kích thước của font chữ:
+
+xx-small: cực cực nhỏ
+x-small: cực nhỏ
+small: nhỏ
+smaller: nhỏ hơn
+medium: trung bình
+large: lớn
+x-large: cực lớn
+xx- large: cực cực lớn
+larger: lớn hơn
+Thông thường, chúng ta dùng đơn vị pixel (px) cho giá trị kích thước font chữ. Hầu hết mọi người thường dùng 20 pixel, 35 pixel, 80 pixel.
+
+Bạn cũng có thể dùng đơn vị phần trăm (%). Ví dụ:
+
+Nếu bạn nói sử dụng 100%, nó sẽ là kích thước mặc định.
+Nếu bạn nói sử dụng 110%, nó sẽ lớn hơn một chút.
+Nếu bạn sử dụng 75%, nó sẽ bằng 3/4 kích thước ban đầu.
+Màu chữ và màu nền
+
+Chúng ta dùng color để đổi màu của chữ. Thuộc tính background-color dùng để đổi màu nền.
+
+Để xem các cách sử dụng màu sắc, bạn hãy xem lại ở mục trước.
+
+Ví dụ:
+
+        h1 {
+
+            color: #343434;
+
+            background-color: gainsboro;
+
+        }
+
+Canh lề (text-align)
+
+Tương tự như trong word, CSS cho phép canh lề bằng thuộc tính text-align với 4 giá trị:
+
+text-align: left  -> canh lề trái (mặc định)
+text-align: right -> canh lề phải 
+text-align: center -> canh giữa
+text-align: justify ->  canh hai bên
+Chiều cao dòng (line-height)
+
+Thuộc tính line-height dùng để chỉ định chiều cao dòng. Thường người ta dùng đơn vị phần trăm (%)
+
+Ví dụ: line-height: 200%
+
+Hãy xem toàn bộ video bài giảng sau đây để hiểu rõ hơn bài giảng.
+
+(Keywords: Font-family, font color, font-size, font-weight, font-style)
+
+
+Áp dụng CSS cho văn bản
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+Lưu ý:
+
+Để xem được bản dịch Tiếng Việt sát nghĩa hơn của các video bài học, học viên hãy sử dụng công cụ FUNiX Passport. Xem hướng dẫn cài đặt và sử dụng tại đây.
+Để xem được video bài học do Coursera cung cấp, bạn hãy click vào nút Enroll the course và chọn chế độ Audit the course. Xem hướng dẫn cụ thể tại đây.
+
+</body>
+</html>

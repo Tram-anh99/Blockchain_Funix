@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      Điều chỉnh hiển thị bằng CSS
+ Bookmark this page
+Để giải quyết vấn đề vị trí hiển thị, lập trình viên cần có những kiến thức về Inline và Block. Sau đó, áp dụng các thuộc tính float hay overflow để chỉ định vị trí cho các khối hay các thẻ. Hai video sau sẽ hướng dẫn học viên điều chỉnh hiển thị bằng CSS.
+
+1. Nhắc lại về block và Inline
+
+Có 2 loại hiển thị phổ biến nhất là block (khối) và inline (nội tuyến).
+
+Các block tag là những tag chiếm một chiều rộng và chiều cao nhất định. Nó sẽ luôn bắt đầu dòng mới, và phía sau nó cũng luôn là dòng mới. Bạn có thể chỉ định kích thước như chiều cao và chiều rộng của nó.
+
+Các inline tag là những tag chỉ chiếm đủ không gian cần thiết. Nếu hai hay nhiều thẻ inline gần nhau, chúng có thể nằm trên cùng 1 dòng. Cho đến khi dòng đó hết chỗ, nó sẽ thực hiện xuống dòng.
+
+2. Display: inline-block
+
+Trong CSS, chúng ta có thể dùng thuộc tính display để quy định hiển thị cho một thành phần.
+
+Ví dụ: display: block;
+
+Giá trị display:inline-block hiển thị sẽ giống như inline và chúng có thể bên cạnh nhau, nhưng chúng cũng sẽ chấp nhận thuộc tính chiều cao (height) và chiều rộng (width).
+
+3. Display: none
+
+Display: none sẽ ẩn thành phần khỏi giao diện. Nó như thể trình duyệt nhấc nó lên và bỏ nó ra khỏi trang.
+
+4. Float và clear
+
+Float và clear không nhất thiết phải thể hiện bạn muốn trang ở vị trí nào cụ thể của các phần tử trên trang của bạn, mà là nơi bạn muốn đặt chúng.
+
+Theo mặc định, khi trình duyệt đặt các phần tử lên trang, nó bắt đầu ở góc trên bên trái. Các phần tử tiếp theo sẽ tiếp tục bổ sung vào trang theo quy tắc đó.
+
+Float cho phép bạn định vị lại mọi thứ:
+
+float: right -> định vị phần tử sang bên phải
+float: left -> định vị phần tử sang bên trái.
+Và khi bạn thêm float thì một lần nữa, ngay sau phần tử áp dụng thuộc tính float, bạn đang ảnh hưởng đến các yếu tố lân cận vì yếu tố lân cận của bạn cần phải biết vị trí của yếu tố này. Đó là lý do tại sao chúng ta có thuộc tính bổ sung được gọi là clear:
+
+clear: left -> sẽ đảm bảo không có gì float ở bên trái.
+clear: right -> nghĩa là không có gì float ở bên phải.
+clear: both -> không có yếu tố nào float bên cạnh cả.
+5. Thuộc tính overflow
+
+Bạn có thể sử dụng thuộc tính overflow (tràn) để xác định cách mọi người sẽ có thể truy cập nội dung đó, hoặc liệu họ có thể truy cập nó hay không.
+
+Có 4 giá trị của thuộc tính overflow:
+
+visible (có thể nhìn thấy), về cơ bản có nghĩa là nếu bạn đã vẽ một hộp.Nếu  có văn bản bên trong nó, văn bản sẽ tràn ra ngoài hộp (box).
+hidden: (ẩn) làm hoàn toàn ngược lại. Nếu bạn có thứ gì đó bên trong cái hộp này và nó quá lớn, nó sẽ biến mất. Bạn không thể nhìn thấy nó.
+scroll: (cuộn) nó sẽ tạo ra một thanh cuộn ngang và dọc cho phần tử.
+auto: (tự động), nó sẽ thêm thanh cuộn khi cần thiết
+6. Hiển thị dạng bảng (display:table)
+
+display:table -> hiển thị các phần tử dạng bảng.
+display:table-cell  -> xếp các phần tử trong các cột
+7. Visibility (có thể nhìn thấy)
+
+Visibility xác định liệu một phần tử sẽ được một người dùng nhìn thấy hay không. Nó tương tự như thuộc tính display:none ở trên nhưng có một chút khác biệt:
+
+visibility:hidden; -> Nó vẫn chiếm khoảng không vốn có, các phần tử sau nó sẽ không “trượt” lên
+display: none; -> Giải phóng khoảng không vốn có, các phần tử sau nó có thể sẽ “trượt” lên
+Hãy xem toàn bộ video bài giảng sau đây để hiểu rõ hơn bài giảng.
+
+(Keywords: CSS inline, block float, clear, overflow, display, visible, position)
+
+
+Điều chỉnh hiển thị bằng CSS - phần 1
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+
+Điều chỉnh hiển thị bằng CSS - phần 2
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+Lưu ý:
+
+Để xem được bản dịch Tiếng Việt sát nghĩa hơn của các video bài học, học viên hãy sử dụng công cụ FUNiX Passport. Xem hướng dẫn cài đặt và sử dụng tại đây.
+Để xem được video bài học do Coursera cung cấp, bạn hãy click vào nút Enroll the course và chọn chế độ Audit the course. Xem hướng dẫn cụ thể tại đây.
+</body>
+</html>

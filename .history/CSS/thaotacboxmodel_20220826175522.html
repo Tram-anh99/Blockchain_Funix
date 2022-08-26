@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      Thao tác với Box Model
+ Bookmark this page
+Box model là một khái niệm chung của CSS giúp bạn chỉnh kích thước và đặt yếu tố của bạn ở vị trí bạn muốn. Nó ảnh hưởng trực tiếp đến chiều cao và chiều rộng của phần tử.
+
+Nhắc lại về hiển thị:
+
+Inline: không thể chỉ định chiều cao, chiều rộng. Bất cứ khi nào bạn có một thứ là inline, nếu bạn cho nó một chiều cao và chiều rộng, trình duyệt sẽ bỏ qua nó.
+Block hoặc inline-block: có thể nhận các thuộc tính chiều cao và chiều rộng. Do đó, chúng ta có thể dùng nó để điều chỉnh kích thước.
+Thuộc tính border (đường viền)
+
+Thuộc tính border (đường viền) xác định style của đường viền mà bạn muốn, chiều rộng và màu của viền là gì. Bất kỳ phần tử nào cũng có thể có một đường viền xung quanh nó cho dù là inline hay là block hay là inline block
+
+Ví dụ: border: 2px solid yellow;
+
+Trong đó:
+
+2px: độ dày của viền. Giá trị mặc định là 1px
+solid: kiểu đường viền là nét liền
+yellow: màu sắc của viền
+Bạn cũng có thể dùng riêng từng thuộc tính: border-width, border-style, border-color.
+
+Border-style có nhiều giá trị khác nhau:
+
+dotted (chấm)
+dashed (gạch ngang)
+groove (có xẻ rãnh)
+ridged (viền 3D)
+hidden (ẩn)
+inset (đường viền hình 3D)
+outset (đường viền đầu 3D)
+Border-width có thể dùng đơn vị pixel (px) hoặc các giá trị thiết lập:
+
+thin (mỏng)
+medium (trung bình)
+large (lớn)
+Border-color được dùng giống như các trường hợp sử dụng màu sắc. Bạn có thể dùng tên màu, hoặc mã màu RGB
+
+Bạn cũng có thể thiết lập đường viền riêng cho từng cạnh. Mỗi cạnh tương ứng với một bộ giá trị. Tên của 4 cạnh lần lượt là:
+
+Top: cạnh trên
+Right: cạnh bên phải
+Bottom: cạnh dưới
+Left: cạnh bên trái
+Thuộc tính margin (lề)
+
+Margin (lề) là không gian nằm ngoài đường viền. Đó là khoảng giữa hai phần tử liền kề nhau. Vì vậy, nó cung cấp cho bạn không gian vì bạn không muốn ai chạm vào bạn.
+
+Với margin, bất cứ khi nào bạn cung cấp cho nó một margin là dương thì nó sẽ di chuyển phần tử của bạn sang phải hoặc xuống dưới.
+
+Nếu bạn cho nó một margin âm, nó sẽ di chuyển tới gần với phần tử lân cận hơn. Nó sẽ di chuyển sang trái hoặc lên trên.
+
+Thuộc tính padding (đệm)
+
+Về lý thuyết thì padding (đệm) rất giống với margin, không gian này nằm giữa phần tử và đường viền của nó.
+
+Margin và padding chỉ có giá trị là kích thước, không có màu sắc hay kiểu giống border. Các padding luôn luôn có cùng màu với các yếu tố, và margin luôn luôn cùng màu của phần thân (body) của trang.
+
+Bạn thường dùng đơn vị pixel hoặc phần trăm cho padding và margin.
+
+Tính kích thước phần tử
+
+Kích thước phần tử được tính theo cả kích thước phần nội dung, padding, border và margin. Ví dụ:
+
+Nếu chúng ta có phần tử với các kích thước:
+
+width (chiều rộng) 100 px
+padding: 10px
+margin: 5px
+và border: 1px
+Thì chiều rộng thực tế của nó là 132px = 5px (margin-trái) + 1px (border-trái) + 10px (padding-trái) + 100px (chiều rộng) +  10px (padding-phải) + 1px (border-phải) + 5px (margin-phải)
+
+Quy tắc chiều quay đồng hồ và quy tắc đối lập (mở rộng)
+
+Nếu bạn muốn viết kết hợp 4 giá trị theo 4 cạnh của margin, padding hay border, bạn cần kết hợp nó theo thứ tự. Ở đây sử dụng quy tắc chiều quay kim đồng hồ và quy tắc đối lập.
+
+Nếu bạn viết cả 4 giá trị, ví dụ: padding: 10px 6px 12px 3px; thứ tự giá trị gán vào là top-right-bottom-left theo thứ tự kim đồng hồ lúc 12h-3h-6h-9h
+Nếu chỉ có 2 giá trị, ví dụ: padding: 10px 12px; quy tắc đối lập được áp dụng. Giá trị đầu tiên là top là 10px, đối lập với nó là bottom cũng là 10px. Tương tự, right và left là 12px
+Nếu chỉ có 1 giá trị, ví dụ: padding: 10px, giá trị này được áp dụng cho cả 4 hướng
+Nếu có 3 giá trị, ví dụ: padding: 10px 6px 12px; cả hai quy tắc được áp dụng. top-right-bottom lần lượt nhận 3 giá trị tương ứng là 10px 6px 12px; Do left đối lập với right, nên nó nhận giá trị bằng của right là 6px
+Thuộc tính box-sizing (chỉnh kích thước hộp)
+
+Box-sizing (chỉnh kích thước hộp) lấy phép toán từ chiều cao tổng hợp và chiều rộng tổng hợp. Nó có 2 giá trị:
+
+box-sizing: content-box (hộp nội dung) -> chiều cao hoặc chiều rộng tổng hợp mặc định của bạn. Nó giống như ví dụ đã tính trong phần Tính kích thước phần tử
+box-sizing: border-box (hộp đường viền) -> border-box sẽ xem xét chiều rộng, nội dung, và cả padding. Nó thường được dùng để tránh việc các phần tử bị tính sai kích thước dẫn đến không cùng nằm trên 1 hàng.
+Hãy xem toàn bộ video bài giảng sau đây để hiểu rõ hơn bài giảng.
+
+(Keywords: Box Model, Border, Margin, Padding)
+
+
+Box model
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+Lưu ý:
+
+Để xem được bản dịch Tiếng Việt sát nghĩa hơn của các video bài học, học viên hãy sử dụng công cụ FUNiX Passport. Xem hướng dẫn cài đặt và sử dụng tại đây.
+Để xem được video bài học do Coursera cung cấp, bạn hãy click vào nút Enroll the course và chọn chế độ Audit the course. Xem hướng dẫn cụ thể tại đây.
+</body>
+</html>
