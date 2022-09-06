@@ -1,0 +1,16 @@
+a {
+      margin: 10px;
+      padding: auto;
+      color: black;
+}
+a:hover div:hover p:hover {
+      margin: 20px;
+      padding: auto;
+      color: rgba(134, 65, 123, 0.438);
+}
+a : active div:active p:active {
+      margin: 10px;
+      padding: auto;
+      color: rgba(49, 93, 158, 0.233);
+      font-family: monospace;
+}
