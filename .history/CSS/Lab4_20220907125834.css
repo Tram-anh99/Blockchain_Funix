@@ -1,0 +1,7 @@
+
+a :active div :active p :active {
+      margin: 10px;
+      padding: auto;
+      color: rgba(49, 93, 158, 0.233);
+      font-family: monospace;
+}
