@@ -23,7 +23,6 @@ h3{
       color: #0f1bc0;
 }
 .img1{
-      height: 50px;
-      width:50px
-      ;
+      height: inherit;
+      width:5px;
 }
