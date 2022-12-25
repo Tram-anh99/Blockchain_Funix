@@ -1,0 +1,39 @@
+a{
+color: aquamarine;
+font: optional;
+font-size: 23;
+}
+a :hover {
+      margin: 10px;
+      padding: auto;
+      color: rgba(26, 92, 190, 0.233);
+      font-family: monospace;
+}
+p{
+      color: peru;
+}
+h3{
+      color: #444444;
+}
+.icon-red{
+      color: #92464a;
+}
+.icon-blue{
+      color: #4046a0;
+}
+.icon-orange{
+      color: rgb(194, 151, 71);
+}
+.icon-yellow{
+      color: rgb(177, 109, 61);
+}
+.img1{
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+}
+.img1 :hover {
+      margin: 10px;
+      padding: auto;
+    
+}

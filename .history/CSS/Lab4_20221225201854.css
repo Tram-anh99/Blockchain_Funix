@@ -7,33 +7,22 @@ p{
       Italic: kiểu in nghiêng
       Oblique: kiểu xiên, về cơ bản oblique chỉ là một kiểu nghiêng đặc biệt. */
       font-style: italic;
-      font-weight: bold;
+      
 }
 h3{
       color: #444444;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: xx-large;
-      font-weight:normal;
-
+      font-size: larger;
 }
 .icon-red{
       color: #92464a;
-      margin: 20px 50px;
 }
 .icon-blue{
       color: #4046a0;
-      margin: 20px 50px;
 }
 .icon-orange{
-      color: rgb(194, 71, 184);
-      margin: 20px 50px;
+      color: rgb(194, 151, 71);
 }
 .icon-yellow{
       color: rgb(177, 109, 61);
-      margin: 20px 50px;
-}
-tr {
-      display: block;
-      margin-top: auto;
-      margin-bottom: auto;
 }

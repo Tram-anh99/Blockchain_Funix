@@ -1,0 +1,26 @@
+a{
+color: aquamarine;
+font: optional;
+font-size: 23;
+}
+a :hover {
+      margin: 10px;
+      padding: auto;
+      color: rgba(26, 92, 190, 0.233);
+      font-family: monospace;
+}
+p{
+      color: peru;
+}
+h3{
+      color: #444444;
+}
+.icon-red{
+      color: #a32f35;
+}
+.icon-blue{
+      color: #0f1bc0;
+}
+.img1{
+      width: ;
+}

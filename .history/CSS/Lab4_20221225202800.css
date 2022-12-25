@@ -34,6 +34,6 @@ h3{
 }
 tr {
       display: block;
-      margin-top: auto;
-      margin-bottom: auto;
+      margin-top: 50px;
+      margin-bottom: 20;
 }
