@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS selector</title>
+</head>
+<body>
+      CSS Selectors
+ Bookmark this page
+Nhắc lại mô hình DOM
+
+Mô hình đối tượng tài liệu (DOM) là cách trình duyệt chia trang của bạn thành cấu trúc giống cây. Theo cách này, trình duyệt biết liệu một đoạn văn sẽ ở ngay sau một tag <h1> hoặc 2 đoạn văn là yếu tố anh em trong cùng một phần.
+
+Chúng ta sẽ sử dụng điều đó để tạo style cho một số phần nhất định của trang của bạn.
+
+CSS Selector
+
+CSS Selector cho phép bạn tạo ra các bộ chọn, từ đó chọn ra các thẻ sẽ được áp dụng style tương ứng. CSS sẽ cung cấp cho bạn rất nhiều tùy chọn, chia thành các nhóm khác nhau.
+
+Chúng ta có thể dùng bộ chọn để cùng lúc chọn ra nhiều thẻ theo một nhóm. Hay cũng có thể dùng bộ chọn để chỉ chọn ra một nhóm nhỏ các thẻ riêng biệt.
+
+Bộ chọn theo id
+
+Thuộc tính id của thẻ html được sử dụng để xác định một phần tử duy nhất trong DOM.
+
+Ví dụ:
+
+    <div id="header"></div>
+
+    <div id="footer"></div>
+
+Trong CSS, chúng ta sử dụng biểu tượng # để xác định thành phần theo id.
+
+Ví dụ:
+
+#header{
+
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+Bạn sẽ thấy, quy tắc ở đây là dấu # kết hợp với id để tạo thành bộ chọn.
+
+Bộ chọn này giúp chọn ra chính xác thành phần theo id. Bởi vì, id thường có tính duy nhất, bộ chọn này cũng chỉ chọn ra 1 thành phần.
+
+Bộ chọn class (bộ chọn lớp)
+
+Bộ chọn theo class có thể áp dụng cho một loạt các phần tử, không chỉ một phần tử cụ thể trong DOM. Đây là cách dùng rất phổ biến, được sử dụng trong hầu hết các trường hợp.
+
+Trước tiên, bạn cần tạo các lớp (class) cho các thành phần. Ví dụ:
+
+<img src="cat.jpg" alt="Joe" class="thumb">
+
+<img src="dog.jpg" alt="Bacon" class="thumb">
+
+<img src="bird.jpg" alt="Tweety" class="thumb">
+
+3 ảnh được xếp chung vào class có giá trị là ‘thumb’.
+
+Bộ chọn theo class sử dụng kí hiệu . (dấu chấm) trước mỗi class.
+
+ .thumb{
+
+     border: 1px solid #0006CC;
+
+     width: 20%;
+
+ }
+
+Cả 3 ảnh trên (và tất cả các thẻ khác có sử dụng class=”thumb”) sẽ được áp dụng chung style.
+
+Sự khác biệt giữa việc sử dụng các class và id
+
+Về cú pháp: id sử dụng kí hiệu # (dấu thăng), class sử dụng kí hiệu . (dấu chấm)
+
+Về sử dụng: class được sử dụng cho nhiều thẻ khác nhau. Do đó, bộ chọn theo class đồng thời sẽ chọn ra nhiều phần tử, và áp dụng style chung cho các phần tử đó. Nó tạo ra tính thống nhất cho toàn trang. Code CSS cũng ngắn gọn, tránh bị trùng lặp, dễ dàng thay đổi. Trong khi, id thường chỉ dùng cho 1 thẻ để định danh duy nhất.
+
+Một thẻ có thể áp dụng nhiều class khác nhau. Do đó, nó có thể nhận được style từ nhiều bộ chọn class khác nhau.
+
+Universal selector (bộ chọn toàn cục)
+
+Universal selector áp dụng style cho tất cả các yếu tố trên trang. Chúng ta dùng dấu * để dùng bộ chọn này.
+
+Cú pháp:
+
+ *{
+
+     box-sizing: border-box;
+
+ }
+
+Lưu ý: bộ chọn này có sức ảnh hưởng rất lớn, nó tác động lên tất cả các phần tử trên trang. Do đó, hiển thị của trang có thể sẽ biến đổi rất nhiều. Bạn cần phải rất cẩn thận khi dùng bộ chọn này
+
+Attribute selector (bộ chọn thuộc tính)
+
+Đối tượng ở đây không phải là các tag mà là các attribute bên trong các tag. Chúng ta sử dụng thêm các thuộc tính trong bộ chọn. Ví dụ:
+
+a[href="info.html"]
+
+{
+
+    /* CSS */
+
+}
+
+Sẽ lấy ra tất cả thẻ a có thuộc tính href=”info.html”
+
+Bạn cũng có thể áp dụng thêm một vài cách để mở rộng bộ chọn này:
+
+Sử dụng kí hiệu ^ (dấu mũ) để tìm tất cả thuộc tính bắt đầu bằng giá trị chỉ ra. Ví dụ: a[href^="http://umich"]
+Sử dụng kí hiệu $ (dấu đô la) để tìm tất cả thuộc tính kết thúc bằng giá trị chỉ ra. Ví dụ: a[src$=".png"]
+Sử dụng kí hiệu * (dạng wildcard, dấu sao) để lấy ra thuộc tính có chứa giá trị chỉ ra. Ví dụ: a[href*="umich"]
+Hãy xem toàn bộ video bài giảng sau đây để hiểu rõ hơn bài giảng.
+
+(Keywords: CSS selector, descendant selector, attribute selector, pseudo-class, pseudo-element, universal selector)
+
+
+CSS Selectors
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+Lưu ý:
+
+Để xem được bản dịch Tiếng Việt sát nghĩa hơn của các video bài học, học viên hãy sử dụng công cụ FUNiX Passport. Xem hướng dẫn cài đặt và sử dụng tại đây.
+Để xem được video bài học do Coursera cung cấp, bạn hãy click vào nút Enroll the course và chọn chế độ Audit the course. Xem hướng dẫn cụ thể tại đây.
+</body>
+</html>
