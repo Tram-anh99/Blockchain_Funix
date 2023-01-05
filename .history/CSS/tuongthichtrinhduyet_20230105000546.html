@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      Tính tương thích trình duyệt
+ Bookmark this page
+Mục tiêu của phần này là để đảm bảo rằng các trang web của bạn có giao diện nhất quán, bất kể mọi người đang truy cập nó như thế nào. Mặc dù HTML5 đã thúc đẩy các nhà phát triển trình duyệt triển khai theo cách nhất quán này, các trình duyệt vẫn dùng những cách hiển thị và tuân thủ các tag mới đang ra mắt theo cách khác nhau. Khi trình duyệt cập nhật và thay đổi và khi trình duyệt mới xuất hiện, bạn sẽ phải nhớ rằng có thể khi mọi người nhìn vào trang của bạn, giao diện sẽ không giống như bạn nhìn thấy. Do đó, bạn cần đảm bảo rằng trang của bạn hoạt động cho nhiều người nhất.
+
+Cách dễ nhất để loại bỏ sự khác biệt của trình duyệt là tạo một style sheet mặc định
+
+Trong style sheet đó, bạn sẽ xóa bỏ bất kỳ mặc định trình duyệt cho các yếu tố được tạo style.
+
+Một số thuộc tính mặc định của trình duyệt là padding, margin. Do đó, đầu tiên, chúng ta sẽ đặt lại về giá trị 0
+
+        *{
+
+            padding: 0px;
+
+            margin: 0px;
+
+        }
+
+Vấn đề thứ 2 là: các trình duyệt không hỗ trợ tất cả các property của CSS3. Có một số property trông khá hay ho trên một số trình duyệt, nhưng chúng không được xử lý theo mặc định trên các trình duyệt khác.
+
+Để sử dụng các thuộc tính này, chúng ta cần thêm vào các tiền tố chẳng hạn như webkit, moz, ms, hoặc o
+
+- Tiền tố -webkit-: được dùng cho Android, Chrome, iOS, Safari
+
+- Tiền tố -moz-: được dùng cho Firefox
+
+- Tiền tố -ms-: được dùng cho Internet Explorer
+
+- Tiền tố -o-: được dùng cho Opera
+
+Một số thuộc tính thường không được hỗ trợ, và cần phải thêm tiền tố:
+
+column-count
+border-radius
+gradient
+Để biết những thuộc tính nào được hỗ trợ và những thuộc tính nào thì không, bạn có thể tra ở Caniuse
+
+Hãy xem toàn bộ video bài giảng sau đây để hiểu rõ hơn bài giảng.
+
+
+Tính tương thích trình duyệt
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+Lưu ý:
+
+Để xem được bản dịch Tiếng Việt sát nghĩa hơn của các video bài học, học viên hãy sử dụng công cụ FUNiX Passport. Xem hướng dẫn cài đặt và sử dụng tại đây.
+Để xem được video bài học do Coursera cung cấp, bạn hãy click vào nút Enroll the course và chọn chế độ Audit the course. Xem hướng dẫn cụ thể tại đây.
+</body>
+</html>
