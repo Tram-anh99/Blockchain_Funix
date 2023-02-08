@@ -1,0 +1,9 @@
+* {
+      
+      text-align: center;
+      color: blue;
+    }
+html{
+      background-image: url(img1.avif);
+      background-size: cover;
+}
