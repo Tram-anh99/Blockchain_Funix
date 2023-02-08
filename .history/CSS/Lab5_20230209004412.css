@@ -1,0 +1,8 @@
+* {
+      text-align: center;
+      color: hsl(0, 25%, 65%);
+    }
+body {
+      background: url(img1.jpg);
+      background-size: cover;
+}

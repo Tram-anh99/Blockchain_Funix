@@ -1,0 +1,22 @@
+* {
+      text-align: center;
+      color: rgb(233, 196, 106);
+    }
+body {
+      background-image: url("/CSS/img/img1.jpg");
+      background-size:  2000px 1000px;
+      background-repeat: no-repeat;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap');
+    
+h1 {
+      font-family: 'Sassy Frass', cursive;
+      font-size: xxx-large;
+    }
+h2{
+
+}

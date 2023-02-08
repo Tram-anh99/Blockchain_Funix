@@ -1,0 +1,8 @@
+* {
+      text-align: center;
+      color: Charcoal;
+    }
+body {
+      background: url(img1.jpg);
+      background-size: cover;
+}

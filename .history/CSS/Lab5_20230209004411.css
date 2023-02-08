@@ -1,0 +1,8 @@
+* {
+      text-align: center;
+      color: #bc8f8f;
+    }
+body {
+      background: url(img1.jpg);
+      background-size: cover;
+}

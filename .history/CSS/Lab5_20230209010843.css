@@ -12,20 +12,20 @@ body {
       right: 0;
       bottom: 0;
       left: 0;
+
     }
+
+
 h1 {
       font-family: 'Sassy Frass', cursive;
-      font-size:70px;
+      font-size: xxx-large;
     }
-li{
+h2{
       font-family: 'Sassy Frass', cursive;
       color: rgb(244, 162, 97);
-      display: inline;
-      font-size: xx-large;
-}
-.money{
-      color: rgb(231, 111, 81);
-}
-.best_sale{
       
+}
+h2 p{
+      color: rgb(231, 111, 81);
+     
 }

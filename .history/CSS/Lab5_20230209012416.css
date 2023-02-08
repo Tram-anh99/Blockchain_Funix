@@ -15,17 +15,15 @@ body {
     }
 h1 {
       font-family: 'Sassy Frass', cursive;
-      font-size:70px;
+      font-size: xxx-large;
     }
 li{
       font-family: 'Sassy Frass', cursive;
       color: rgb(244, 162, 97);
       display: inline;
-      font-size: xx-large;
+      font-size: xxx-large;
 }
-.money{
+h2 p{
       color: rgb(231, 111, 81);
-}
-.best_sale{
-      
+     
 }
