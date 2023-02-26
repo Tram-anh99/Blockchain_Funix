@@ -23,9 +23,9 @@ div li {
       display: inline;
       font-size: xx-large;
 }
-h1::first-letter {
+div li.best_sale::f {
       color: rgb(243, 109, 0);
-      font-size:100px;
+      font-size:xx-large;
 }
 .money {
       color: rgb(231, 111, 81);

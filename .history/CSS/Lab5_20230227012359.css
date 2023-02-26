@@ -25,7 +25,7 @@ div li {
 }
 h1::first-letter {
       color: rgb(243, 109, 0);
-      font-size:100px;
+      font-size:100;
 }
 .money {
       color: rgb(231, 111, 81);

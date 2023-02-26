@@ -23,14 +23,14 @@ div li {
       display: inline;
       font-size: xx-large;
 }
-h1::first-letter {
+p::first-letter{
       color: rgb(243, 109, 0);
-      font-size:100px;
+      font-size:xx-large;
 }
 .money {
       color: rgb(231, 111, 81);
 }
-.best_sale {
+.best_sale{
       font-family: 'Sassy Frass', cursive;
       color: rgb(156, 34, 34);
       display: none;

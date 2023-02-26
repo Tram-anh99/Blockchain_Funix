@@ -23,9 +23,8 @@ div li {
       display: inline;
       font-size: xx-large;
 }
-h1::first-letter {
-      color: rgb(243, 109, 0);
-      font-size:100px;
+::maker      color: rgb(243, 109, 0);
+      font-size:xx-large;
 }
 .money {
       color: rgb(231, 111, 81);

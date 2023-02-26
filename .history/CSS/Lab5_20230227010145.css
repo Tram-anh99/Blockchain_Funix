@@ -17,26 +17,21 @@ h1 {
       font-family: 'Sassy Frass', cursive;
       font-size:70px;
     }
-div li {
+div li{
       font-family: 'Sassy Frass', cursive;
-      color: rgb(243, 174, 118);
+      color: rgb(244, 162, 97);
       display: inline;
       font-size: xx-large;
 }
-h1::first-letter {
-      color: rgb(243, 109, 0);
-      font-size:100px;
-}
-.money {
+.money{
       color: rgb(231, 111, 81);
 }
-.best_sale {
-      font-family: 'Sassy Frass', cursive;
+.best_sale{
       color: rgb(156, 34, 34);
       display: none;
+      background-color: yellow;
       padding: 20px;
-      font-size: xx-large;
 }
-div:hover .best_sale {
+div:hover . {
       display: block;
     }
