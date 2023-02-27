@@ -21,36 +21,11 @@ div p {
       font-family: 'Sassy Frass', cursive;
       color: rgb(243, 174, 118);
       display: inline;
-      font-size: x-large;
-}
-#a1:hover{
-      color: blue;
       font-size: xx-large;
 }
-#c3:hover{
-      color: blue;
-      font-size: xx-large;
-
-}
-#e5:hover{
-      color: blue;
-      font-size: xx-large;
-
-}
-#f6:hover{
-      color: blue;
-      font-size: xx-large;
-
-}
-#b2:hover{
-      color: rgb(97, 16, 16);
-      font-size: xx-large;
-
-}
-#d4:hover{
-      color: rgb(97, 16, 16);
-      font-size: xx-large;
-
+h1::first-letter {
+      color: rgb(243, 109, 0);
+      font-size:100px;
 }
 .money {
       color: rgb(231, 111, 81);
@@ -59,8 +34,7 @@ div p {
       font-family: 'Sassy Frass', cursive;
       color: rgb(156, 34, 34);
       display: none;
-      padding: 5px;
-      margin: 3px;
+      padding: 20px;
       font-size: xx-large;
 }
 div:hover .best_sale {

@@ -21,36 +21,25 @@ div p {
       font-family: 'Sassy Frass', cursive;
       color: rgb(243, 174, 118);
       display: inline;
-      font-size: x-large;
+      font-size: xx-large;
 }
 #a1:hover{
       color: blue;
-      font-size: xx-large;
-}
+fon}
 #c3:hover{
       color: blue;
-      font-size: xx-large;
-
 }
 #e5:hover{
       color: blue;
-      font-size: xx-large;
-
 }
 #f6:hover{
       color: blue;
-      font-size: xx-large;
-
 }
 #b2:hover{
       color: rgb(97, 16, 16);
-      font-size: xx-large;
-
 }
 #d4:hover{
       color: rgb(97, 16, 16);
-      font-size: xx-large;
-
 }
 .money {
       color: rgb(231, 111, 81);
