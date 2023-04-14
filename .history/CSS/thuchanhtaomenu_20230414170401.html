@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Thực hành tạo menu</title>
+</head>
+<body>
+      Thực hành tạo menu
+ Bookmark this page
+1. Tạo menu trái
+
+Video hướng dẫn thực hành tạo menu như hình:
+
+
+
+Menu gồm 4 links: Home, Photos, Recipes, Contact.
+
+Các thuộc tính và kiến thức CSS sử dụng:
+
+background-color (màu nền),
+border
+color
+line-height
+padding (đệm),
+margin (lề)
+box-sizing: border-box (tham khảo lại bài 4, mục 7. Box model (mô hình hộp)
+Nơi đầu tiên mà người dùng nhận được thông tin là từ tiêu đề của trang. Bạn nên đảm bảo rằng tiêu đề của bạn ngắn nhưng cũng cho phép người dùng biết trang này khác với các trang khác tại trang web của bạn như thế nào.
+
+Trang web cần có hệ thống phân cấp tiêu đề phù hợp. Tiêu đề cần lồng nhau để cung cấp cấu trúc một cách rõ ràng. Nó cần có dạng cấu trúc cây, giống như những mô hình cấu trúc mà bạn đã biết.
+
+Để đảm bảo có cấu trúc tốt, bạn cần lưu ý một số điểm:
+
+-        - Bạn chỉ nên có một tiêu đề h1. Bởi vì h1 thể hiện cho tiêu đề của nội dung. Nó nên là duy nhất cho mỗi trang.
+
+-        - Bạn không nên bỏ qua cấp độ của tiêu đề, ví dụ: nhảy từ h2 đến h4 mà không qua h3. Thay vào đó, bạn cần tuân theo một trật tự nhất định để mọi người có thể nhận ra rằng có trang của bạn có ý nghĩa.
+
+ 
+
+-        - Bạn không nên dùng heading chỉ để thay đổi kích thước của chữ. Nếu muốn thay đổi kích thước chữ, hãy đơn giản là dùng CSS
+
+   (Phần còn lại nói về screen reader và cách dùng off-page, nó không cần thiết nên bỏ qua)
+
+2. Tạo menu ngang
+Video hướng dẫn code để tạo menu ngang:
+
+
+
+Tính năng của menu ngang: 
+
+- Có một link (tương ứng với trang hiện tại) có màu khác với các link còn lại
+
+- Khi di chuột qua mỗi link thì sẽ đổi màu
+
+Sử dụng các kiến thức và kĩ năng sau để thực hiện:
+
+- Bước 1: Sử dụng thẻ nav và các thẻ a để tạo menu ngang
+
+<nav>
+
+        <a href="#">Home</a>
+
+        <a href="#" class="current">Photos</a>
+
+        <a href="#">Recipes</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+- Bước 2: Tạo CSS cho nav:
+
+ nav {
+
+            box-sizing: border-box;
+
+            border: 1px solid #06425c;
+
+            color: #06425C;
+
+            background: #FFFFFF;
+
+            padding-left: 20px;
+
+        }
+
+- Bước 3: Tạo CSS cho link trong nav
+
+nav a {
+
+            box-sizing: border-box;
+
+            display: inline-block;
+
+            line-height: 50px;
+
+            height: 60px;
+
+            color: #ffffff;
+
+            background-color: #486B02;
+
+            text-decoration: none;
+
+            margin: 1% 5% 1% 0;
+
+            padding: 1% 5%;
+
+            border-radius: 25px;
+
+        }
+
+- Bước 4: Sử dụng thêm class có tên là current, để đánh dấu link tương ứng với trang hiện tại. Viết CSS có màu nền (background-color) khác với màu của các link khác
+
+ .current {
+
+            background-color: #800000;
+
+        }
+
+- Bước 5: Sử dụng pseudo-class hover để tạo hiệu ứng khi di chuột qua link
+
+nav a:hover{
+
+            color: #000000;
+
+            border-radius: 0;
+
+        }
+
+3. Tạo menu 2 cấp
+
+Video hướng dẫn tạo menu hai cấp, khi di chuột qua sẽ xổ ra menu con để người dùng chọn:
+
+
+
+Bước 1: sử dụng nav, ul, li lồng nhau để tạo phần HTML
+
+<nav>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Pictures</a>
+
+                <ul>
+
+                    <li><a href="#">2015</a></li>
+
+                    <li><a href="#">2014</a></li>
+
+                    <li><a href="#">2013</a></li>
+
+                </ul>
+
+            </li>
+
+            <li><a href="#" class="active">Recipes</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+ 
+
+    </nav>
+
+Bước 2: Tạo CSS cho trang 
+
+       body {
+
+            margin: 0;
+
+            padding: 0;
+
+            background: #ccc;
+
+        }
+
+Bước 3: Tạo css cho nav
+
+        nav ul {
+
+            list-style: none;
+
+            background-color: #444;
+
+            text-align: center;
+
+            padding: 0;
+
+            margin: 0;
+
+        }
+
+Bước 4: Tạo CSS cho item trong menu:
+
+        nav li {
+
+            width: 20%;
+
+            border-right: 1px solid black ;
+
+            height: 50px;
+
+            line-height: 50px;
+
+            font-size: 140%;
+
+            display: inline-block;
+
+            margin-right: -4px;
+
+        }
+
+Bước 5: Bỏ border của item cuối cùng trong menu:
+
+        nav li:last-child{
+
+            border-right: none;
+
+        }
+
+Bước 6: Bỏ border bên phải của các item con (cấp 2)
+
+       nav li li{
+
+            border-right: none;
+
+        }
+
+Bước 7: Tạo CSS cho link:
+
+       nav a {
+
+            text-decoration: none;
+
+            color: #fff;
+
+            display: block;
+
+            padding-left: 15px;
+
+            transition: 0.5s background-color;
+
+        }
+
+Bước 8: Tạo CSS khi di chuột qua link:
+
+        nav a:hover {
+
+            background-color: #005f5f;
+
+        }
+
+Bước 9: Tạo CSS cho link hiện tại
+
+        nav a.active {
+
+            background-color: #aaa;
+
+            color: 444;
+
+            cursor: default;
+
+        }
+
+Bước 10: Tạo CSS cho sub-menu:
+
+      nav li li {
+
+            font-size: 0.8em;
+
+        }
+
+        
+
+        nav>ul>li {
+
+            text-align: center;
+
+        }
+
+        
+
+        nav>ul>li>a {
+
+            padding-left: 0;
+
+        }
+
+Bước 11: Căn chỉnh vị trí và hiển thị của sub-menu:    
+
+         nav li ul {
+
+            position: absolute;
+
+            display: none;
+
+            width: inherit;
+
+        }
+
+        
+
+        nav li:hover ul {
+
+            display: block;
+
+        }
+
+        
+
+        nav li ul li {
+
+            display: block;
+
+        }
+
+Hãy xem toàn bộ video bài giảng sau đây để hiểu rõ hơn bài giảng.
+
+
+Tạo menu navigation (thanh điều hướng) - phần 1
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+
+Điều hướng dễ truy cập
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+
+Tạo menu navigation (thanh điều hướng) - phần 2
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+
+Tạo menu navigation (thanh điều hướng) - phần 3
+Video từ nguồn học liệu gốc
+
+Credit: Coursera
+
+Lưu ý:
+
+Để xem được bản dịch Tiếng Việt sát nghĩa hơn của các video bài học, học viên hãy sử dụng công cụ FUNiX Passport. Xem hướng dẫn cài đặt và sử dụng tại đây.
+Để xem được video bài học do Coursera cung cấp, bạn hãy click vào nút Enroll the course và chọn chế độ Audit the course. Xem hướng dẫn cụ thể tại đây.
+</body>
+</html>
