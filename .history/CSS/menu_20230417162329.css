@@ -25,12 +25,3 @@ body{
       border-radius: 25px;
     
     }
-    .current{
-      background-color:#800000;
-    }
-    
-    nav a:hover{
-      color:#000000;
-      border-radius: 0;
-    
-    }

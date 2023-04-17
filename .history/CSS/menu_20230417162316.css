@@ -1,0 +1,14 @@
+body{
+      background-color: #F2F2F2;
+      margin: 1%;
+      padding:1%;
+    }
+    
+    nav{
+      box-sizing:border-box;
+      border: 1px solid #06425C;
+      color:#06425C;
+      background-color:#FFFFFF;
+      overflow: auto;
+      padding-left:20px;
+    }
