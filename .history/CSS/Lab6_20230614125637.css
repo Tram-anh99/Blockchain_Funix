@@ -15,10 +15,4 @@ nav{
       height: 100vh;
       overflow: auto;
 }
-nav a{
-      display: block;
-      line-height: 45px;
-      height: 45px;
-      color: #ffffff;
-      
-}
+nav
