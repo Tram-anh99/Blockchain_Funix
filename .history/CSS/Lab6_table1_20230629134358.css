@@ -1,0 +1,15 @@
+ table {
+      font: 300;
+      font-size: larger;
+      font-weight: 500;
+      line-height: 3;
+      width: 75%;
+      margin: auto;
+      color: rgb(244, 248, 247);
+      background-color: rgb(0,150,136,1);
+      border-radius: 2px;
+}
+tr:nth-child(even){
+      background-color: aliceblue;
+      color:black;
+}

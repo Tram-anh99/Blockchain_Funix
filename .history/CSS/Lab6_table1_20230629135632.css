@@ -1,0 +1,11 @@
+ table {
+      border: 1px solid rgb(199, 79, 79);  
+    border-collapse: collapse;  
+}
+tr:nth-child(odd){
+      background-color: rgb(173, 180, 185);
+      color:black;
+}
+th{
+      background-color: aquamarine;
+}
