@@ -30,8 +30,8 @@ header p{
       opacity: 5px;
 }
 nav  {
-      margin-left: -7px;
-      margin-right: 4px;
+      margin-left: -10px;
+      margin-right: 10px;
       float: left;
       width: 30%;
       height:755px; 
@@ -53,10 +53,10 @@ nav a{
       opacity: 5px;
 }
 article{
-      margin-right: 3px;
-      margin-left: -6px;
+      margin-right: -10px;
+      margin-left: 10px;
       float: right;
-      width: 70%;
+      width: 30%;
       height:755px; 
       background: #ccc;
       padding: 20px;
