@@ -68,13 +68,12 @@ table {
       border-collapse: collapse;
       text-align: left;
       font-size: larger;
-      border: 2px solid rgb(155, 194, 47);   
-      border-radius: 5px;
+      border: 2px solid rgb(0, 150, 136,1);   
+      bor
 }
 td,th{
       border: 2px solid #ddd;
       padding: 8px;
-      border-radius: 5px;
 }
 th {
       padding-top: 12px;
@@ -82,6 +81,4 @@ th {
       text-align: left;
       background-color: #04AA6D;
       color: white;
-      border-radius: 5px;
-
 }

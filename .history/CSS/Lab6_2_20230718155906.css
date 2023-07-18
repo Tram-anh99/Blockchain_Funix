@@ -34,7 +34,7 @@ nav  {
       margin-right: 4px;
       float: left;
       width: 30%;
-      height: 1000px; 
+      height:755px; 
       background: #ccc;
       padding: 20px;
       border: 1px solid red;
@@ -57,6 +57,7 @@ article{
       margin-left: -6px;
       float: right;
       width: 70%;
+      height:755px; 
       background: #ffffff;
       padding: 20px;
       border: 1px solid red;
@@ -68,20 +69,30 @@ table {
       border-collapse: collapse;
       text-align: left;
       font-size: larger;
-      border: 2px solid rgb(155, 194, 47);   
-      border-radius: 5px;
+      border: 2px solid rgb(0, 150, 136,1);   
 }
-td,th{
-      border: 2px solid #ddd;
+tr{
+      background-color: rgb(243, 243,243,1);
+      color:rgb(0, 150, 136,1);
+      font-weight: bold;
+      border-top:2px solid rgb(123, 123, 134);
+      border-bottom:2px solid rgb(123, 123, 134);
+      border: 1px solid #ddd;
       padding: 8px;
-      border-radius: 5px;
 }
 th {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      text-align: left;
-      background-color: #04AA6D;
-      color: white;
-      border-radius: 5px;
-
+      background-color:rgb(0, 150, 136,1);
+      color: rgb(248, 248, 248);
+      border: 1px solid #ddd;
+      padding: 8px;
 }
+tr:first-child {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+ .table{
+      border-top-right-radius: 20px;
+      border-top-left-radius:20px ;
+      width: fit-content;
+      overflow: hidden;
+    }
