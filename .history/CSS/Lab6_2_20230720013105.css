@@ -89,9 +89,7 @@ table {
       border: 2px solid rgb(155, 194, 47);   
       border-radius: 5px;
 }
-.col1{
-      text-align: left;
-}
+
 td,th{
       border: 2px solid #ddd;
       padding: 8px;
@@ -100,7 +98,7 @@ td,th{
 th {
       padding-top: 12px;
       padding-bottom: 12px;
-      text-align: center;
+      text-align: left;
       background-color: #5daa04cb;
       color: white;
       border-radius: 5px;

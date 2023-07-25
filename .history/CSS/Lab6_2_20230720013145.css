@@ -90,7 +90,7 @@ table {
       border-radius: 5px;
 }
 .col1{
-      text-align: left;
+      text-align: ;
 }
 td,th{
       border: 2px solid #ddd;
@@ -100,7 +100,7 @@ td,th{
 th {
       padding-top: 12px;
       padding-bottom: 12px;
-      text-align: center;
+      text-align: left;
       background-color: #5daa04cb;
       color: white;
       border-radius: 5px;
