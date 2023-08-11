@@ -1,0 +1,73 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+    * {
+      /* color: rgb(12, 43, 35); */
+      font-family: 'Open Sans', sans-serif;
+      font-size: large;
+    
+    }
+header{
+      text-align: left;
+      display: inline-block;
+}
+ /* Chọn thẻ <a> chứa thẻ <img> */
+a img {
+      /* border: 2px solid red;  */
+      /* Ví dụ: tạo đường viền đỏ cho hình ảnh trong link */
+      max-width: 5%; 
+      /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử <a> */
+       position: absolute ;
+    }    
+
+nav ul{
+      list-style: none;
+      background-color: #fff8f800;
+      color: #005f5f;
+      /* text-align: left; */
+      padding: 0;
+      margin: 0;
+ }
+ nav li{
+       width: 20%;
+       /* border-right: 1px solid black; */
+       height: 50px;
+       line-height: 50px;
+       font-size: 140%;
+       display: inline-block;
+       margin-right: -4px;
+ }
+
+ nav a{
+       text-decoration: none;
+       color: #0c3d39;
+       display: block;
+       padding-left: 15px;
+       transition: .5s background-color;
+ }
+ nav a:hover{
+      color: #000;
+ }
+ nav a.active{
+       background-color: #091c6d;
+       color: #444;
+       cursor: default;
+ }
+ nav  li  li{
+       font-size: .8em;
+ }
+ nav > ul > li{
+       text-align: center;
+ }
+ nav > ul > li > a{
+       padding-left: 0;
+ }
+ nav li ul {
+       position: absolute;
+       display: none;
+       width: inherit;
+ }
+ nav li:hover ul{
+       display: block;
+ }
+ nav li ul li{
+       display: block;
+ }
