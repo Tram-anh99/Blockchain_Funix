@@ -37,7 +37,8 @@ nav ul{
        display: block;
        padding-left: 10px;
        transition: .5s background-color;
-       margin-left: 0px;
+       
+
  }
  nav a:hover{
       color: #1416a1;
