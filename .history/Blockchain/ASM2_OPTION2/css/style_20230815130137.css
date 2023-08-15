@@ -1,0 +1,60 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+* {
+      /* color: rgb(12, 43, 35); */
+      font-family: 'Open Sans', sans-serif;
+      font-size: large;
+    }
+    body {
+      font-size: 28px;
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+    .active {
+      background-color: #4CAF50;
+    }
+    .logo{
+      size: 2px;
+    }
+    .hea{
+      position: relative; /* Để có khung tham chiếu cho các phần tử con */
+      display: inline-block; /* Hiển thị hình và chữ trên cùng một dòng */
+    }
+    
+    .hider {
+      position: absolute; /* Đặt vị trí tuyệt đối trong khung tham chiếu */
+      top: 1000%; /* Đặt vị trí theo chiều dọc */
+      left: 50%; /* Đặt vị trí theo chiều ngang */
+      transform: translate(-50%, -50%); /* Dịch chuyển để căn giữa chữ */
+      background-color: rgba(0, 0, 0, 0.5); /* Màu nền cho chữ */
+      color: white; /* Màu chữ */
+      padding: 10px; /* Khoảng cách từ chữ đến viền */
+      font-size: 18px; /* Kích thước chữ */
+      font-family: Arial, sans-serif; /* Font chữ */
+    }
+    

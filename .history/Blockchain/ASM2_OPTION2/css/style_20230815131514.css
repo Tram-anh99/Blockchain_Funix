@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
 * {
       /* color: rgb(12, 43, 35); */
       font-family: 'Open Sans', sans-serif;
@@ -64,14 +64,8 @@
       color: rgb(17, 116, 83);
     }
 
-    .menu_text :hover {
-      font-weight: bold;
+    .horizontal-menu a :hover {
+      text-decoration: none;
+      color: rgb(17, 116, 83);
     }
-    .main2{
-      float: left;
-      padding: 20px;
-      width: 80%;
-      /* background-color: #f1f1f1; */
-      height: 300px;
-      display: inline;
-    }
+    

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
 * {
       /* color: rgb(12, 43, 35); */
       font-family: 'Open Sans', sans-serif;
@@ -8,6 +8,39 @@
       font-size: 28px;
     }
     
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #33333300;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: rgb(6, 151, 132);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+    .active {
+      background-color: #4CAF50;
+    }
+    .logo{
+      size: 2px;
+    }
     .hea{
       position: relative; /* Để có khung tham chiếu cho các phần tử con */
       display: inline-block; /* Hiển thị hình và chữ trên cùng một dòng */
@@ -15,7 +48,7 @@
     
     .hider {
       position: absolute; /* Đặt vị trí tuyệt đối trong khung tham chiếu */
-      top: 45%; 
+      top: 30%; 
       /* Đặt vị trí theo chiều dọc */
       /* left: 50%;  */
       /* Đặt vị trí theo chiều ngang */
@@ -32,46 +65,4 @@
       font-family: Arial, sans-serif; 
       /* Font chữ */
     }
-    .horizontal-menu {
-      display: flex;
-      align-items: center;
-      background-color: #ffffff00;
-      /* color: rgb(16, 138, 97); */
-    }
     
-    .logo {
-      margin-right: 20px;
-    }
-    
-    .logo img {
-      width: 40px;
-      height: 40px;
-    }
-    
-    .horizontal-menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-    }
-    
-    .horizontal-menu li {
-      padding: 10px 20px;
-    }
-    
-    .horizontal-menu a {
-      text-decoration: none;
-      color: rgb(17, 116, 83);
-    }
-
-    .menu_text :hover {
-      font-weight: bold;
-    }
-    .main2{
-      float: left;
-      padding: 20px;
-      width: 80%;
-      /* background-color: #f1f1f1; */
-      height: 300px;
-      display: inline;
-    }
