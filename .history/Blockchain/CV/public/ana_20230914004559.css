@@ -1,0 +1,35 @@
+.bannerText
+{
+	/* position: absolute; */
+	/* top: 50%;
+	left: 25%;
+	transform: translateY(-50%);
+	max-width: 1000px;
+      text-align: justify;
+      font-size: large;
+      width: 100%; */
+	font-size: 3em;
+}
+
+.bannerText h2,
+.bannerText h3
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	transform-origin: left;
+	text-transform: uppercase;
+	/* transform: scaleX(0);
+	animation: revealTextReverse 1s ease-in-out forwards; */
+}
+.bannerText h2
+{
+	font-size: 3em;
+	/* animation-delay: 2s; */
+}
+.bannerText h3
+{
+	font-size: 2em;
+	/* animation-delay: 3s; */
+}
